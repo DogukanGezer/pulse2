@@ -123,7 +123,7 @@ There is no Node build step. The frontend is a single HTML file.
 
 ```bash
 # 1. Get the code
-git clone https://github.com/<your-username>/pulse2.git
+git clone https://github.com/DogukanGezer/pulse2.git
 cd pulse2
 
 # 2. Install the Tauri CLI (once)
