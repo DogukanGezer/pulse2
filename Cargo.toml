@@ -1,0 +1,17 @@
+[package]
+name = "pulse2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nanoid = "0.5.0"
+serde = "1.0.229"
+serde_json = "1.0.154"
+sysinfo = "0.40.1"
+tauri = "2.12.5"
+
+[workspace]
+members = ["src-tauri"]
+resolver = "2"
