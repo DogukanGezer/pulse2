@@ -1,0 +1,60 @@
+{
+    "rules": [
+        {
+            "id": "k90s7",
+            "alert_type": "cpu_usage",
+            "name": "CPU Usage",
+            "target": "instance_name", // instance name
+            "threshold": 80, // percentage
+            "threshold_unit": "%", //%
+            "alert_cooldown": 60,
+            "is_enabled": true,
+            "trigger_count": 3, // number of times the threshold must be exceeded before triggering an alert
+            "created_at": 1234567890,
+            "updated_at": 1234567890
+        },
+        {
+            "id": "k90s8",
+            "alert_type": "memory_usage",
+            "name": "Memory Usage",
+            "target": "instance_name", // instance name
+            "threshold": 1024, // unit
+            "threshold_unit": "MB", //mb or %
+            "alert_cooldown": 60,
+            "is_enabled": true,
+            "trigger_count": 3, // number of times the threshold must be exceeded before triggering an alert
+            "created_at": 1234567890,
+            "updated_at": 1234567890
+        },
+        {
+            "id": "k90s9",
+            "alert_type": "restart_count",
+            "name": "Restart Count",
+            "target": "instance_name", // instance name
+            "threshold": 5, // number of restarts
+            "threshold_unit": "count", // unit
+            "alert_cooldown": 60,
+            "is_enabled": true,
+            "trigger_count": 3, // total number of alert trigger
+            "created_at": 1234567890,
+            "updated_at": 1234567890
+        },
+        {
+            "id": "k90s10",
+            "alert_type": "status_change",
+            "name": "Status Change",
+            "target": "instance_name", // instance name
+            "alert_cooldown": 60,
+            "threshold_unit": "enum",
+            "statuses": [
+                "stopped",
+                "errored",
+                "online"
+            ], // statuses to alert on
+            "is_enabled": true,
+            "trigger_count": 3, // total number of alert trigger
+            "created_at": 1234567890,
+            "updated_at": 1234567890
+        }
+    ]
+}
